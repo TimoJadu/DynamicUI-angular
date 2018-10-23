@@ -1,0 +1,22 @@
+﻿[
+  {
+    "template": "text",
+    "label": "Name",
+    "name": "employeeName",
+    "id": "d27596e2-a7ba-4826-af33-41bb58df6275",
+    "value": "John Smith"
+  },
+  {
+    "template": "eldate",
+    "label": "Birthday",
+    "name": "employeeBirthday",
+    "id": "d27596e2-a7ba-4826-af33-41bb58df1111",
+    "value": "1970-01-01"
+  },
+  {
+    "template": "command",
+    "text": "Update",
+    "id": "d27596e2-a7ba-4826-af33-41bb58df6266"
+  }
+] 
+

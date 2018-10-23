@@ -1,0 +1,56 @@
+﻿
+
+<style>
+.lable{
+    padding: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom-color: black;
+}
+.labelText{
+    /*color: white;*/
+    padding: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:larger;
+    border-bottom-color: black;
+}
+</style>
+
+<table>   
+
+    <ng-container *ngFor="let emp of _employees">     
+        <tr *ngIf="emp.template == 'text'">
+            
+
+            <td>
+                <input name="{{emp.name}}" id="{{emp.id}}" value="{{emp.value}}"/>
+                <br/>
+                <br />                
+                <label class="labelText"> {{emp.label | uppercase}}</label>
+                <br />
+                <br />
+            </td>
+        </tr>
+
+        <tr *ngIf="emp.template == 'eldate'">
+            <td>
+                <input name="{{emp.name}}" id="{{emp.id}}" type="date" value="{{emp.value}}"/>
+                <br/>
+                <br/>
+                <label class="labelText"> {{emp.label | uppercase}}</label>
+                <br />
+                <br />
+            </td>
+        </tr>
+
+        <tr *ngIf="emp.template == 'command'">
+            <td>
+                <input id="{{emp.id}}" type="button" value="{{emp.text | uppercase}}"/>
+                <br />
+                <br />                
+            </td>
+        </tr>
+    </ng-container>
+    <br/>
+    <br/>
+</table>
+
