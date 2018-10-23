@@ -36,7 +36,8 @@ var EmployeeComponent = /** @class */ (function () {
         core_1.Component({
             selector: 'my-employee',
             templateUrl: 'app/employee/employee.component.html',
-            styleUrls: ['app/employee/employee.component.css']
+            styleUrls: ['app/employee/employee.component.css'],
+            changeDetection: core_1.ChangeDetectionStrategy.Default
         })
     ], EmployeeComponent);
     return EmployeeComponent;

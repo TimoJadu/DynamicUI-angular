@@ -1,11 +1,12 @@
-﻿import { Component, Input} from '@angular/core';
+﻿import { Component, Input, ChangeDetectionStrategy} from '@angular/core';
 import { IEmployeeElements } from '../AppService/IEmployeeElements';
 import { AppComponent } from '../app.component'
 
 @Component({
     selector: 'my-employee',
     templateUrl: 'app/employee/employee.component.html',
-    styleUrls: ['app/employee/employee.component.css']
+    styleUrls: ['app/employee/employee.component.css'],
+    changeDetection: ChangeDetectionStrategy.Default
 })
 
 export class EmployeeComponent {    

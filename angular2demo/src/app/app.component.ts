@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { AppService } from './AppService/App.Service';
 import { IEmployeeElements } from './AppService/IEmployeeElements';
 
@@ -6,7 +6,8 @@ import { IEmployeeElements } from './AppService/IEmployeeElements';
 @Component({
   selector: 'my-app',    
     templateUrl: 'app/app.component.html',
-    providers: [AppService]
+    providers: [AppService],
+    changeDetection: ChangeDetectionStrategy.Default
 })
 export class AppComponent implements OnInit{
     pageHeader: string = 'Employee Form';
